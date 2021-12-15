@@ -76,6 +76,7 @@ int main()
     //accept the connection from first client
     while (1)
     {
+        printf("Server Started ....... Listening Now.....");
         bzero(str, 100);        //clear the response buffer
         read(comm_fd, chc, 5);  // read again from connection
         int choice = atoi(chc); // extract number 2 from string
